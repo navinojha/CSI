@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,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">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <title>CSI</title>
+    <style>
+            @media (max-width: 576px) {
+              nav .container{
+                width: 100%;
+              }
+            }
+        </style>
+  
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+
+            <nav class="navbar op navbar-inverse bg-inverse  navbar-toggleable-md text-white " >
+                    <img id="csi_logo" class="mr-2" src="./img/csi-logo (1).png" alt="csi image">
+                    <a class="navbar-brand " id="font" href="http://www.csi-india.org/index.php">CSI</a>
+                    <div class="container nav justify-content-center ">
+                        
+                      
+                          <ul class="navbar-nav text-color1">
+                              <li class="nav-item mr-5">
+                                  <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                              </li>
+                              <li class="nav-item dropdown mr-5">
+                                    <a class="nav-link dropdown-toggle" href="http://www.csi-india.org/AboutCSI.php" data-toggle="dropdown"><i class="fas fa-info"></i> About Us</a>
+                                    <div class="dropdown-menu">
+                                      <a href="http://www.csi-india.org/AboutCSI.php" class="dropdown-item">Mission</a>
+                                      <a href="http://www.csi-india.org/AboutCSI.php" class="dropdown-item">Vision</a>
+                                      <a href="http://www.csi-india.org/AboutCSI.php" class="dropdown-item">Goals & Objectives</a>
+                                    </div>
+                                </li>
+                              <li class="nav-item dropdown mr-5">
+                                  <a class="nav-link dropdown-toggle" href="http://www.csi-india.org/PastEvents.php" data-toggle="dropdown"><i class="fas fa-link"></i> Join CSI</a>
+                                  <div class="dropdown-menu">
+                                    <a href="http://www.csi-india.org/AboutMembership.php" class="dropdown-item">Membership</a>
+                                    <a href="" class="dropdown-item">Recognition</a>
+                                    <a href="" class="dropdown-item">CSI Publication</a>
+                                    <a href="" class="dropdown-item">MOU</a>
+                                    <a href="" class="dropdown-item">Awards</a>
+                                  </div>
+                              </li>
+                              <li class="nav-item mr-5">
+                                  <a class="nav-link" href="#"><i class="far fa-calendar"></i> Event</a>
+                              </li>
+                              <li class="nav-item mr-5">
+                                  <a class="nav-link" href="http://www.csi-india.org/ContactUS.php"><i class="fas fa-phone"></i> Contact</a>
+                              </li>
+                          </ul>
+                      </div>
+                </nav>
+                <hr class="bg-success">
+
+                <!-- SLIDER WITH CAPTIONS -->
+                <div class="line">
+                        <div class="carousel slide mt-2" id="slider4" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li class="active" data-target="#slider4" data-slide-to="0"></li>
+                                  <li class="active" data-target="#slider4" data-slide-to="1"></li>
+                                  <li class="active" data-target="#slider4" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                    <img src="img/imagesofcsi3.jpg" alt="First Slide" class="d-block img-fluid">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      Bangalore Event 
+                                     
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="img/imagesofcsi1.jpg" alt="Second Slide" class="d-block img-fluid">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      Innaugration
+                                     
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item ">
+                                    <img src="img/imagesofcsi2.jpg" alt="Third Slide" class="d-block img-fluid">
+                                    <div class="carousel-caption d-none d-md-block">
+                                     Prize Winner
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a href="#slider4" class="carousel-control-next" data-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                                </a>
+                              </div>
+
+                              
+                </div>
+                        
+    
+          <hr class="bg-success">
+          
+    
+    <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block">
+                 <ul class="list-group">
+                    <li class="list-group-item bg-success"><strong>GET INVOLVED WITH CSI</strong></li>
+                     <li class="list-group-item">Become a life member</li>
+                     <li class="list-group-item">Join CSI as Annual Member</li>
+                     <li class="list-group-item">Publish a paper with CSI</li>
+                     <li class="list-group-item">Forming CSI special Interest groups</li>
+                     <li class="list-group-item">Forming CSI Student Branches</li>
+                     <li class="list-group-item">Renewal of Individual Membership</li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card justify-content-center">
+                   
+                            <div class="card-columns">
+                                    <div class="card">
+                                        <img class="card-img-top img-fluid" src="./img/ritesh-awards-01.jpg" alt="Card image cap">
+                                        <div class="card-block">
+                                        <h4 class="card-title">CSI Meeting</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top img-fluid" src="./img/csilogo3.png" alt="Card image cap">
+                                        <div class="card-block">
+                                        <h4 class="card-title">Upcoming Events</h4>
+                                        <p class="card-text">Discounted registration fee for CSI conventions & seminars
+                                                Participation in joint events of CSI with its MOU partner / Organization</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                            <img class="card-img-top img-fluid" src="./img/imagesofcsi4.jpg" alt="Card image cap">
+                                            <div class="card-block">
+                                            <h4 class="card-title">Award</h4>
+                                            <p class="card-text">Department of Computer Science & Engineering, Acharya Institute Of Technology had organized a technical talk on “Publishing the Technical Paper” by Prof. Deepak S S, Acharya Institute Of Technology, in association with Computer Society Of India and Lakshya the student Forum on 19/3/2014 at 2:00pm in Lab 201 .</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/imagesofcsi3.jpg" alt="Card image cap">
+                                                <div class="card-block">
+                                                <h4 class="card-title">Special Guest</h4>
+                                                <p class="card-text">Eligibility to be nominated for the best Student paper in CSI communications
+                                                        Best Student Branch award (only for Student Branch and not applicable for individual student members)</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                    <img class="card-img-top img-fluid" src="./img/3.jpg" alt="Card image cap">
+                                                    <div class="card-block">
+                                                    <h4 class="card-title">Technical Talk</h4>
+                                                    <p class="card-text">Access to CSI knowledge portal through Login-id and password
+                                                            Technology updates through Conferences, Seminars, Tutorials & workshop at discounted rates
+                                                            A forum for activities like Paper Presentations, Quiz, Competitions and Exhibitions.
+                                                            Ability to connect with distinguished speakers on different technology areas</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                        <img class="card-img-top img-fluid" src="./img/ritesh-awards-03.jpg" alt="Card image cap">
+                                                        <div class="card-block">
+                                                        <h4 class="card-title">CSI Communication</h4>
+                                                        <p class="card-text">Interaction and collaboration with distinguished academicians, researchers and practitioners
+                                                                Opportunity to interact with Industry professionals and chalk out a career path</p>
+                                                        </div>
+                                                    </div>
+                                    </div> 
+                    
+                       
+                </div>
+                   
+                            
+          </div>
+          <div class="ft mt-5">
+                <footer id="main-footer" class="p-5 bg-inverse text-white">
+                
+                        <hr class="bg-success">
+                         <p class="text-center">&copy;2017-2018 CSI, Inc. All Rights Reserved</p>
+                         <p class=" text-center text-muted">Developed By Navin & Tikaram </p>
+                         <hr class="bg-success">
+                     </footer>
+          </div>
+          
+
+          </div>
+            
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
